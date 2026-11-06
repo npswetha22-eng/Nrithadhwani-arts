@@ -1,0 +1,3004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mohiniyattam | Nirthadhwani Arts</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #3d3029;
+            background: #fffaf5;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+       .navbar {
+    background:  #fffaf5 !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    padding: 18px 0;
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar-brand {
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #4b1f1f !important;
+    font-family: Georgia, serif;
+}
+
+/* ============================
+   NIRTHADHWANI ARTS LOGO
+============================ */
+
+/* LOGO + ACADEMY NAME */
+
+.academy-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ROUND LOGO */
+
+.academy-logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid #b8860b;
+    background: #fffaf5;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.academy-logo:hover {
+    transform: scale(1.08);
+}
+
+/* BRAND NAME */
+
+.brand-name {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #4b1f1f;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.brand-name span {
+    color: #b8860b;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .academy-brand {
+        gap: 8px;
+    }
+
+    .academy-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+.navbar-brand span {
+    color: #b8860b;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+    position: relative;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333 !important;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+/* Underline hover effect */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #b8860b;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #b8860b !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Contact button */
+.contact-btn {
+    background: #4b1f1f;
+    color: white;
+    padding: 10px 20px !important;
+    border-radius: 25px;
+    margin-left: 28px !important;
+}
+
+.contact-btn::after {
+    display: none;
+}
+
+.contact-btn:hover {
+    background: #b8860b;
+    color: white !important;
+}
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .mohini-hero {
+            height: 90vh;
+
+            background:
+                linear-gradient(
+                    rgba(30, 17, 10, 0.55),
+                    rgba(30, 17, 10, 0.55)
+                ),
+                url("mhhero.png");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 750px;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero-label,
+        .section-label {
+            font-size: 13px;
+            letter-spacing: 3px;
+            color: #dca66e;
+            font-weight: 600;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(55px, 8vw, 100px);
+            line-height: 1;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        .hero-content h1 span {
+            color: #e3aa70;
+        }
+
+        .hero-content p {
+            font-size: 17px;
+            line-height: 1.9;
+            max-width: 650px;
+        }
+
+        .hero-btn,
+        .cta-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            border-radius: 40px;
+            background: #a76137;
+            color: white;
+            letter-spacing: 1px;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .hero-btn:hover,
+        .cta-btn:hover {
+            background: #dca66e;
+            color: #211812;
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+       .about-section {
+    padding: 200px ;
+    background: #fffaf5;
+}
+
+.about-section .section-label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #dca66e;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-section h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    line-height: 1.2;
+    color: #3d3029;
+    margin-bottom: 25px;
+}
+
+.about-section h2 span {
+    color: #a76137;
+}
+
+.about-text {
+    color: #71635c;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   IMAGE LAYER
+========================= */
+
+.about-images {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.about-img {
+    position: absolute;
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(62, 36, 20, 0.18);
+    transition: 0.4s ease;
+}
+
+
+/* IMAGE 1 */
+
+.img-one {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+
+/* IMAGE 2 */
+
+.img-two {
+    top: 70px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+/* IMAGE 3 */
+
+.img-three {
+    bottom: 0;
+    left: 110px;
+    z-index: 3;
+}
+
+
+/* IMAGE HOVER */
+
+.about-img:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    .about-section {
+        padding: 80px 0;
+    }
+
+    .about-section h2 {
+        font-size: 45px;
+    }
+
+    .about-images {
+        height: 470px;
+        margin-top: 20px;
+    }
+
+    .about-img {
+        width: 250px;
+        height: 320px;
+    }
+
+    .img-one {
+        left: 20px;
+    }
+
+    .img-two {
+        right: 20px;
+    }
+
+    .img-three {
+        left: 100px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .about-section h2 {
+        font-size: 38px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-images {
+        height: 400px;
+    }
+
+    .about-img {
+        width: 190px;
+        height: 260px;
+    }
+
+    .img-one {
+        top: 0;
+        left: 0;
+    }
+
+    .img-two {
+        top: 55px;
+        right: 0;
+    }
+
+    .img-three {
+        bottom: 0;
+        left: 65px;
+    }
+}
+
+
+        /* =========================
+           HIGHLIGHTS
+        ========================= */
+
+        .highlights {
+            padding: 100px 0;
+            background: #f6eee6;
+        }
+
+        .section-heading {
+            margin-bottom: 55px;
+        }
+
+        .section-heading h2 {
+            font-size: 52px;
+            margin-top: 15px;
+        }
+
+        .section-heading h2 span {
+            color: #a76137;
+        }
+
+        .highlight-card {
+            background: #fff;
+            padding: 40px 30px;
+            height: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(62, 36, 20, 0.08);
+            transition: 0.4s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 45px rgba(62, 36, 20, 0.14);
+        }
+
+        .highlight-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f4dfca;
+            color: #a76137;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .highlight-card h4 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .highlight-card p {
+            color: #71635c;
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           CLASS DETAILS
+        ========================= */
+.details-timing-section {
+    padding: 45px 0 100px;
+    background: #211812;
+    color: #fffaf5;
+    font-family: "Poppins", sans-serif;
+}
+
+.details-timing-section .container {
+    max-width: 1400px;
+}
+
+/* Section Labels */
+
+.details-timing-section .section-label {
+    display: block;
+    color: #d9a066;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* Main Headings */
+
+.details-timing-section h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #fffaf5;
+    margin: 0 0 22px;
+}
+
+.details-timing-section h2 span {
+    color: #b97845;
+}
+
+/* Description */
+
+.details-timing-section .about-text,
+.details-timing-section .timing-intro {
+    font-size: 14px;
+    line-height: 2;
+    color: #d4c6bd;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   CLASS DETAILS
+========================= */
+
+.detail-list {
+    margin-top: 30px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.detail-icon {
+    min-width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #f2dcc7;
+    color: #a76137;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.detail-item:hover .detail-icon {
+    background: #d9a066;
+    color: #211812;
+    transform: rotate(45deg);
+}
+
+.detail-item h5 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fffaf5;
+    margin: 2px 0 5px;
+}
+
+.detail-item p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #d4c6bd;
+    margin: 0;
+}
+
+/* =========================
+   CLASS TIMING
+========================= */
+
+.timing-box {
+    width: 100%;
+}
+
+.timing-box .timing-intro {
+    margin-bottom: 28px;
+}
+
+.time-card {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 22px;
+    background: #fff;
+    border: 1px solid #eee3d8;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.time-card:hover {
+    transform: translateY(-4px);
+    border-color: #d9a066;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.time-card h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #b97845;
+    margin: 0 0 20px;
+}
+
+.time-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee1d5;
+    font-size: 13px;
+    color: #6f5142;
+}
+
+.time-row span:first-child {
+    color: #6f5142;
+}
+
+.time-row span:last-child {
+    color: #a76137;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.time-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+    .details-timing-section {
+        padding: 65px 0;
+    }
+
+    .details-timing-section h2 {
+        font-size: 35px;
+    }
+
+    .detail-list {
+        margin-bottom: 15px;
+    }
+
+    .timing-box {
+        margin-top: 10px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+    .details-timing-section {
+        padding: 45px 0;
+    }
+
+    .details-timing-section h2 {
+        font-size: 31px;
+    }
+
+    .details-timing-section .section-label {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .detail-item {
+        gap: 12px;
+        margin-bottom: 27px;
+    }
+
+    .detail-icon {
+        min-width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .detail-item h5 {
+        font-size: 16px;
+    }
+
+    .detail-item p {
+        font-size: 12px;
+    }
+
+    .time-card {
+        padding: 20px;
+        border-radius: 13px;
+    }
+
+    .time-card h4 {
+        font-size: 23px;
+    }
+
+    .time-row {
+        font-size: 11px;
+        gap: 8px;
+    }
+}
+
+        /* =========================
+           CLASS INFORMATION
+        ========================= */
+
+        .class-info {
+            padding: 100px 0;
+            background: #f6eee6;
+        }
+
+        .info-box {
+            height: 100%;
+            padding: 45px;
+            background: white;
+            border-radius: 22px;
+            box-shadow: 0 10px 35px rgba(62, 36, 20, 0.08);
+        }
+
+        .info-box h3 {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .info-box h3 span {
+            color: #a76137;
+        }
+
+        .info-box p {
+            color: #71635c;
+            line-height: 1.8;
+        }
+
+        .info-box ul {
+            margin-top: 25px;
+            padding-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 13px;
+            color: #51443d;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta-section {
+            padding: 100px 20px;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(44, 24, 15, 0.88),
+                    rgba(44, 24, 15, 0.88)
+                ),
+                url("mohiniyattam.jpg") center/cover;
+
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            max-width: 650px;
+            margin: auto;
+            color: #e5d8cf;
+            line-height: 1.8;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+       .premium-footer {
+    background: #24140d;
+    color: #fffaf5;
+    padding: 75px 0 25px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 50px;
+}
+
+.footer-brand h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.footer-brand h2 span {
+    color: #d6b36a;
+    font-style: italic;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #bca9a0;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+
+/* SOCIAL LINKS */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* ROUND SOCIAL ICONS */
+.social-links a {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #30251b;
+    color: #d4af62;
+
+    border: 2px solid #d4af62;
+    border-radius: 50%;
+
+    text-decoration: none;
+    box-sizing: border-box;
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* ICON POSITION */
+.social-links a i {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* HOVER EFFECT */
+.social-links a:hover {
+    background-color: #d4af62;
+    color: #21180f;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(212, 175, 98, 0.3);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 576px) {
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-links a i {
+        font-size: 16px;
+    }
+}
+
+/* FOOTER COLUMNS */
+
+.footer-column h4 {
+    color: #d6b36a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.footer-column a,
+.footer-column p {
+    display: block;
+    color: #bca9a0;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #d6b36a;
+    padding-left: 4px;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-line {
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+    margin: 55px 0 22px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #8f7d74;
+    font-size: 12px;
+}
+
+.footer-bottom strong {
+    color: #d6b36a;
+}
+
+
+        
+        /* ================= RESPONSIVE ================= */
+
+
+       @media (max-width: 992px) {
+
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .contact-section {
+        padding: 75px 15px;
+    }
+
+    .contact-heading h2 {
+        font-size: 36px;
+    }
+
+    .contact-info {
+        padding: 45px 25px;
+    }
+
+    .contact-info h3 {
+        font-size: 32px;
+    }
+
+    .contact-form {
+        padding: 35px 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .premium-footer {
+        padding: 55px 20px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* Enquiry Button */
+.enquiry-btn {
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enquiry-btn:hover {
+    background: white;
+    color: #5a2424;
+}
+
+
+/* Modal Background */
+.enquiry-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* Form Box */
+.enquiry-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: #fffaf5;
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+}
+
+
+.enquiry-box h2 {
+    color: #5a2424;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+#selectedCostume {
+    text-align: center;
+    color: #a87528;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+
+    font-size: 30px;
+    color: #5a2424;
+    cursor: pointer;
+}
+
+
+/* Form */
+.form-group {
+    margin-bottom: 16px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #4b2929;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #d8c2ad;
+    border-radius: 8px;
+
+    background: white;
+    font-size: 14px;
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #a87528;
+}
+
+
+.form-group textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #25D366;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.submit-btn:hover {
+    background: #1da851;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .enquiry-box {
+        padding: 25px 20px;
+    }
+
+    .enquiry-box h2 {
+        font-size: 22px;
+    }
+
+}
+
+/* =====================================
+   FONT AWESOME ICON COLORS
+===================================== */
+
+/* Default Icons */
+i.fa,
+i.fas,
+i.far,
+i.fab,
+.fa-solid,
+.fa-regular,
+.fa-brands {
+    color: #800020;
+    transition: color 0.3s ease;
+}
+
+/* Navbar Icons */
+.navbar i,
+.navbar .bi {
+    color: #800020;
+}
+
+/* Navbar Icon Hover */
+.navbar i:hover,
+.navbar .bi:hover {
+    color: #b8860b;
+}
+
+/* User Icon */
+.fa-user {
+    color: #800020 !important;
+}
+
+/* Shopping Cart Icon */
+.fa-cart-shopping,
+.fa-shopping-cart {
+    color: #b8860b;
+}
+
+/* Heart / Wishlist Icon */
+.fa-heart {
+    color: #c03945;
+}
+
+/* Social Media Icons */
+.social-links i {
+    color: #d6b36a;
+}
+
+/* Social Icon Hover */
+.social-links a:hover i {
+    color: #24140d;
+}
+
+/* Contact Icons */
+.contact-icon,
+.contact-info i {
+    color: #b8860b;
+}
+
+/* Enquiry Button Icons */
+.enquiry-btn i {
+    color: #ffffff;
+}
+
+/* Submit Button Icons */
+.submit-btn i {
+    color: #ffffff;
+}
+
+/* Close Icon */
+.close-btn i {
+    color: #800020;
+}
+
+/* Filter Icons */
+.filter-btn i {
+    color: inherit;
+}
+
+/* Add to Cart Button Icons */
+.add-cart-btn i {
+    color: #ffffff;
+}
+
+/* Wishlist Active Icon */
+.wishlist-btn.active i {
+    color: #c03945;
+}
+
+/* Footer Icons */
+.premium-footer i {
+    color: #d6b36a;
+}
+
+/* Footer Icon Hover */
+.social-links a:hover i {
+    color: #24140d;
+}
+
+/* CART AND WISHLIST SIDEBAR */
+
+.shop-sidebar {
+    width: 420px !important;
+    max-width: 100%;
+    background: #fffaf5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop-sidebar .offcanvas-header {
+    padding: 25px;
+    border-bottom: 1px solid #ead8c8;
+}
+
+.shop-sidebar h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #4b1f1f;
+}
+
+.shop-sidebar .offcanvas-body {
+    padding: 25px;
+}
+
+.sidebar-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ead8c8;
+}
+
+.sidebar-product img {
+    width: 85px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sidebar-product-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.sidebar-product-info h5 {
+    font-size: 14px;
+    color: #493326;
+}
+
+.sidebar-product-info p {
+    color: #a76137;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.quantity-box button,
+.remove-item {
+    border: 1px solid #d9c2ae;
+    background: white;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.remove-item {
+    color: #c03945;
+}
+
+.sidebar-footer {
+    padding: 25px;
+    border-top: 1px solid #ead8c8;
+}
+
+.sidebar-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #a76137;
+    color: white;
+}
+
+.sidebar-btn:hover {
+    background: #75452d;
+}
+
+.sidebar-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#cartCount,
+#wishlistCount {
+    font-size: 12px;
+    color: #a76137;
+    font-weight: 700;
+}
+/* ==============================
+   SIGN IN & SIGN UP MODAL
+============================== */
+
+.auth-modal {
+    position: relative;
+    background: #fffaf5;
+    border: none;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.auth-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+/* HEADER */
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-header span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a76137;
+    font-weight: 600;
+}
+
+.auth-header h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 34px;
+    color: #4b1f1f;
+    margin: 10px 0;
+}
+
+.auth-header h2 em {
+    color: #b8860b;
+}
+
+.auth-header p {
+    font-size: 12px;
+    color: #8a786a;
+}
+
+/* TABS */
+
+.auth-tabs {
+    display: flex;
+    background: #f2e5d8;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    border-radius: 25px;
+    color: #654735;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.auth-tab.active {
+    background: #4b1f1f;
+    color: white;
+}
+
+/* FORMS */
+
+.auth-form h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 30px;
+    color: #4b1f1f;
+    text-align: center;
+}
+
+.auth-form > p {
+    text-align: center;
+    color: #8a786a;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.auth-field {
+    margin-bottom: 18px;
+}
+
+.auth-field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #493326;
+    margin-bottom: 8px;
+}
+
+.auth-input {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #e0cbbb;
+    border-radius: 9px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.auth-input:focus-within {
+    border-color: #a76137;
+}
+
+.auth-input i {
+    color: #a76137;
+    font-size: 14px;
+}
+
+.auth-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 14px 12px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+/* SUBMIT BUTTON */
+
+.auth-submit {
+    width: 100%;
+    background: #4b1f1f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 14px;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.auth-submit:hover {
+    background: #a76137;
+}
+
+.auth-submit i {
+    margin-left: 10px;
+    color: white;
+}
+
+/* SWITCH LINKS */
+
+.auth-switch {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 12px;
+    color: #8a786a;
+}
+
+.auth-switch a {
+    color: #a76137;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.auth-message {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    .auth-modal {
+        padding: 30px 20px;
+    }
+
+    .auth-header h2 {
+        font-size: 28px;
+    }
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+         <a class="navbar-brand academy-brand" href="index.html">
+
+            <img src="logo.png"
+                 alt="Nirthadhwani Arts Logo"
+                 class="academy-logo">
+
+            <span class="brand-name">
+                Nirthadhwani <span><i>Arts</i></span>
+            </span>
+
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mynavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        HOME
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">
+                        OUR STORY
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#course" class="nav-link">
+                        OUR COURSES
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#costumes" class="nav-link">
+                        COSTUMES
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#gallery" class="nav-link">
+                        GALLERY
+                    </a>
+                </li>
+
+                
+                 <li class="nav-item">
+    <a href="#"
+       class="nav-link"
+       data-bs-toggle="modal"
+       data-bs-target="#authModal"
+       aria-label="Sign in or sign up">
+        <i class="fa-solid fa-user"></i>
+    </a>
+</li>
+                <li class="nav-item">
+    <a href="#" class="nav-link"
+       data-bs-toggle="offcanvas"
+       data-bs-target="#cartSidebar">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+    </a>
+</li>
+
+<!-- Wishlist -->
+<li class="nav-item">
+    <a href="#" class="nav-link"
+       data-bs-toggle="offcanvas"
+       data-bs-target="#wishlistSidebar">
+
+        <i class="fa-solid fa-heart"></i>
+        <span id="wishlistCount">0</span>
+    </a>
+</li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link contact-btn" style="color:white!important;">CONTACT</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="mohini-hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                INDIAN CLASSICAL DANCE
+            </span>
+
+            <h1>
+                Mohini<span>yattam</span>
+            </h1>
+
+            <p>
+                Discover the timeless grace of Mohiniyattam through
+                expressive movements, rhythm, abhinaya and the rich
+                classical tradition of Kerala.
+            </p>
+
+            <a href="index.html#contact" class="hero-btn">
+                JOIN MOHINIYATTAM CLASS
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <span class="section-label">
+                    ABOUT THE ART FORM
+                </span>
+
+                <h2>
+                    The Beauty of <span>Mohiniyattam</span>
+                </h2>
+
+                <p class="about-text">
+                    Mohiniyattam is one of India's classical dance
+                    traditions and is closely connected with the
+                    cultural heritage of Kerala.
+                </p>
+
+                <p class="about-text">
+                    The dance is known for its graceful movements,
+                    gentle body sways, expressive eyes, hand gestures
+                    and beautiful storytelling.
+                </p>
+
+                <p class="about-text">
+                    At Nirthadhwani Arts, students learn the
+                    fundamentals of Mohiniyattam while developing
+                    rhythm, discipline, confidence and artistic
+                    expression.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="about-images">
+
+                    <img src="mh1.jpg"
+                         alt="Mohiniyattam Dance"
+                         class="about-img img-one">
+
+                    <img src="mh2.jpg"
+                         alt="Mohiniyattam Performance"
+                         class="about-img img-two">
+
+                
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HIGHLIGHTS ================= -->
+
+<section class="highlights">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-label">
+                WHAT YOU WILL LEARN
+            </span>
+
+            <h2>
+                Learn With
+                <span>Grace & Discipline</span>
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        ✦
+                    </div>
+
+                    <h4>
+                        Graceful Movements
+                    </h4>
+
+                    <p>
+                        Learn the soft, flowing and graceful
+                        movements that give Mohiniyattam its
+                        unique character.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        ✦
+                    </div>
+
+                    <h4>
+                        Abhinaya
+                    </h4>
+
+                    <p>
+                        Develop facial expressions, eye movements,
+                        hand gestures and emotional expression.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        ✦
+                    </div>
+
+                    <h4>
+                        Tala & Rhythm
+                    </h4>
+
+                    <p>
+                        Understand rhythm, footwork and coordination
+                        between dance movements and music.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CLASS DETAILS ================= -->
+
+<section class="details-timing-section">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+
+            <!-- LEFT: CLASS DETAILS -->
+            <div class="col-lg-6">
+                <div class="details-box">
+
+                    <span class="section-label">
+                        CLASS DETAILS
+                    </span>
+
+                    <h2>
+                        Your Journey in
+                        <span>Semi-Classical</span>
+                    </h2>
+
+                    <p class="about-text">
+                        Our semi-classical classes help students develop
+                        movement, rhythm, expression and confidence in a
+                        friendly learning environment.
+                    </p>
+
+                    <div class="detail-list">
+
+                        <div class="detail-item">
+                            <div class="detail-icon">✦</div>
+                            <div>
+                                <h5>Beginner Friendly</h5>
+                                <p>
+                                    Learn dance from the basics.
+                                    No previous experience is required.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">✦</div>
+                            <div>
+                                <h5>Online & Offline Classes</h5>
+                                <p>
+                                    Flexible learning options are
+                                    available for students.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">✦</div>
+                            <div>
+                                <h5>No Age Limit</h5>
+                                <p>
+                                    Students of all age groups
+                                    are welcome to learn.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">✦</div>
+                            <div>
+                                <h5>Performance Training</h5>
+                                <p>
+                                    Improve expressions, rhythm,
+                                    movements and stage confidence.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: CLASS TIMING -->
+            <div class="col-lg-6">
+                <div class="timing-box">
+
+                    <span class="section-label">
+                        CLASS SCHEDULE
+                    </span>
+
+                    <h2>
+                        Semi-Classical
+                        <span>Class Timing</span>
+                    </h2>
+
+                    <p class="timing-intro">
+                        Choose a suitable session and begin your
+                        dance journey.
+                    </p>
+
+                    <!-- WEEKDAY -->
+                    <div class="time-card">
+                        <h4>Weekday Classes</h4>
+
+                        <div class="time-row">
+                            <span>Monday</span>
+                            <span>5:00 PM – 6:00 PM</span>
+                        </div>
+
+                        <div class="time-row">
+                            <span>Wednesday</span>
+                            <span>5:00 PM – 6:00 PM</span>
+                        </div>
+
+                        <div class="time-row">
+                            <span>Friday</span>
+                            <span>5:00 PM – 6:00 PM</span>
+                        </div>
+                    </div>
+
+                    <!-- WEEKEND -->
+                    <div class="time-card">
+                        <h4>Weekend Classes</h4>
+
+                        <div class="time-row">
+                            <span>Saturday</span>
+                            <span>10:00 AM – 11:00 AM</span>
+                        </div>
+
+                        <div class="time-row">
+                            <span>Sunday</span>
+                            <span>10:00 AM – 11:00 AM</span>
+                        </div>
+
+                        <div class="time-row">
+                            <span>Special Batch</span>
+                            <span>By Arrangement</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= CLASS INFORMATION ================= -->
+
+<section class="class-info">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+
+                <div class="info-box">
+
+                    <h3>
+                        What Students
+                        <span>Learn</span>
+                    </h3>
+
+                    <p>
+                        Our Mohiniyattam classes gradually introduce
+                        students to the important elements of the art form.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Basic postures and body alignment
+                        </li>
+
+                        <li>
+                            Fundamental Mohiniyattam movements
+                        </li>
+
+                        <li>
+                            Hand gestures – Hastas
+                        </li>
+
+                        <li>
+                            Facial expressions and Abhinaya
+                        </li>
+
+                        <li>
+                            Tala and rhythmic coordination
+                        </li>
+
+                        <li>
+                            Basic dance compositions
+                        </li>
+
+                        <li>
+                            Stage confidence and performance skills
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="info-box">
+
+                    <h3>
+                        Why Learn at
+                        <span>Nirthadhwani Arts?</span>
+                    </h3>
+
+                    <p>
+                        Classical dance is not only about learning
+                        steps. It is a journey of discipline,
+                        expression, culture and confidence.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Traditional Mohiniyattam training
+                        </li>
+
+                        <li>
+                            Friendly learning environment
+                        </li>
+
+                        <li>
+                            Online and offline learning options
+                        </li>
+
+                        <li>
+                            No age limit
+                        </li>
+
+                        <li>
+                            Individual attention and guidance
+                        </li>
+
+                        <li>
+                            Focus on technique and expression
+                        </li>
+
+                        <li>
+                            Performance-oriented training
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <h2>
+            Begin Your Mohiniyattam Journey
+        </h2>
+
+        <p>
+            Take your first step into the world of grace,
+            rhythm and expression with Nirthadhwani Arts.
+        </p>
+
+        <a href="index.html#contact" class="cta-btn">
+            JOIN THE CLASS →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="premium-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <!-- BRAND -->
+            <div class="footer-brand">
+
+                <h2>Nirthadhwani <span>Arts</span></h2>
+
+                <p>
+                    Celebrating the timeless beauty of Indian classical dance
+                    through tradition, expression and graceful movement.
+                </p>
+
+                
+                    <!-- SOCIAL LINKS -->
+                    <div class="social-links">
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/YOUR_USERNAME/"
+                           aria-label="Instagram"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/YOUR_PAGE/"
+                           aria-label="Facebook"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@YOUR_CHANNEL"
+                           aria-label="YouTube"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+
+                <h4>QUICK LINKS</h4>
+
+                <a href="index.html">Home</a>
+                <a href="#about">Our Story</a>
+                <a href="#course">Our Courses</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#costumes">Costumes</a>
+               
+
+            </div>
+
+
+            <!-- COURSES -->
+            <div class="footer-column">
+
+                <h4>OUR COURSES</h4>
+
+                <a href="Bharatanatyam.html">Bharatanatyam</a>
+                <a href="Mohiniyattam.html">Mohiniyattam</a>
+                <a href="Kuchipudi.html">Kuchipudi</a>
+               <a href="Kathak.html">semiclassical</a>
+                <a href="Kathakali.html">folk</a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-column">
+
+                <h4>CONTACT</h4>
+
+                <p>Online & Offline Classes</p>
+
+                <a href="tel:+919XXXXXXXXX">
+                    <i class="fa-solid fa-phone"></i>
+                    +91 7012494994
+                </a>
+
+                <a href="mailto:nirthadhwaniarts@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    nirthadhwaniarts@gmail.com
+                </a>
+
+                <p>All Age Groups Welcome</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-line"></div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 <strong>Nirthadhwani Arts</strong>.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Classical Dance • Tradition • Grace
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+<div class="offcanvas offcanvas-end shop-sidebar"
+     tabindex="-1"
+     id="cartSidebar">
+
+    <div class="offcanvas-header">
+        <h4>My Shopping Cart</h4>
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div id="cartItems"></div>
+    </div>
+
+    <div class="sidebar-footer">
+
+        <h5 id="sideCartTotal">Total: ₹0</h5>
+
+        <button class="sidebar-btn mb-2"
+                id="proceedCheckout">
+            PROCEED TO CHECKOUT
+        </button>
+
+        <button class="sidebar-btn"
+                id="sideClearCart">
+            CLEAR CART
+        </button>
+
+    </div>
+</div>
+
+
+<!-- WISHLIST SIDEBAR -->
+<div class="offcanvas offcanvas-end shop-sidebar"
+     tabindex="-1"
+     id="wishlistSidebar">
+
+    <div class="offcanvas-header">
+        <h4>My Wishlist</h4>
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas">
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div id="wishlistItems"></div>
+    </div>
+</div>
+
+
+<!-- Rental Enquiry Modal -->
+<div id="enquiryModal" class="enquiry-modal">
+
+    <div class="enquiry-box">
+
+        <span class="close-btn" onclick="closeEnquiry()">&times;</span>
+
+        <h2>Costume Rental Enquiry</h2>
+
+        <p id="selectedCostume"></p>
+
+        <form id="enquiryForm">
+
+            <input type="hidden" id="costumeName">
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text"
+                       id="customerName"
+                       placeholder="Enter your name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel"
+                       id="phoneNumber"
+                       placeholder="Enter your phone number"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Costume Size</label>
+                <select id="costumeSize" required>
+                    <option value="">Select Size</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Rental Date</label>
+                <input type="date"
+                       id="rentalDate"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Return Date</label>
+                <input type="date"
+                       id="returnDate"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="message"
+                          placeholder="Any additional requirements"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                SEND ENQUIRY ON WHATSAPP
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+
+
+<script>
+
+/* GET SAVED DATA */
+
+function getSavedData(key) {
+    try {
+        const data = JSON.parse(localStorage.getItem(key));
+        return Array.isArray(data) ? data : [];
+    } catch {
+        return [];
+    }
+}
+
+let cart = getSavedData("danceCart");
+let wishlist = getSavedData("danceWishlist");
+
+function money(price) {
+    return "₹" + Number(price).toLocaleString("en-IN");
+}
+
+
+/* SAVE DATA */
+
+function saveShoppingData() {
+    localStorage.setItem("danceCart", JSON.stringify(cart));
+    localStorage.setItem("danceWishlist", JSON.stringify(wishlist));
+}
+
+
+/* UPDATE CART */
+
+function updateCart() {
+
+    const cartItems = document.getElementById("cartItems");
+    const cartCount = document.getElementById("cartCount");
+    const cartTotal = document.getElementById("sideCartTotal");
+
+    cartItems.innerHTML = "";
+
+    let total = 0;
+    let count = 0;
+
+    if (cart.length === 0) {
+        cartItems.textContent = "Your cart is empty.";
+    }
+
+    cart.forEach((item, index) => {
+
+        const quantity = Number(item.quantity) || 1;
+
+        total += Number(item.price) * quantity;
+        count += quantity;
+
+        const product = document.createElement("div");
+        product.className = "sidebar-product";
+
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.name;
+
+        const info = document.createElement("div");
+        info.className = "sidebar-product-info";
+
+        const title = document.createElement("h5");
+        title.textContent = item.name;
+
+        const price = document.createElement("p");
+        price.textContent = money(item.price * quantity);
+
+        const quantityBox = document.createElement("div");
+        quantityBox.className = "quantity-box";
+
+        const minus = document.createElement("button");
+        minus.textContent = "−";
+        minus.onclick = () => changeQuantity(index, -1);
+
+        const qty = document.createElement("span");
+        qty.textContent = quantity;
+
+        const plus = document.createElement("button");
+        plus.textContent = "+";
+        plus.onclick = () => changeQuantity(index, 1);
+
+        const remove = document.createElement("button");
+        remove.textContent = "Remove";
+        remove.className = "remove-item";
+        remove.onclick = () => removeCart(index);
+
+        quantityBox.append(minus, qty, plus, remove);
+        info.append(title, price, quantityBox);
+        product.append(img, info);
+
+        cartItems.appendChild(product);
+    });
+
+    cartCount.textContent = count;
+    cartTotal.textContent = "Total: " + money(total);
+
+    document.getElementById("proceedCheckout").disabled =
+        cart.length === 0;
+
+    saveShoppingData();
+}
+
+
+/* CHANGE QUANTITY */
+
+function changeQuantity(index, amount) {
+
+    if (!cart[index]) return;
+
+    cart[index].quantity =
+        (Number(cart[index].quantity) || 1) + amount;
+
+    if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+    }
+
+    updateCart();
+}
+
+
+/* REMOVE CART ITEM */
+
+function removeCart(index) {
+    cart.splice(index, 1);
+    updateCart();
+}
+
+
+/* CLEAR CART */
+
+document.getElementById("sideClearCart")
+    .addEventListener("click", function () {
+
+        cart = [];
+        updateCart();
+
+    });
+
+
+/* UPDATE WISHLIST */
+
+function updateWishlist() {
+
+    const wishlistItems =
+        document.getElementById("wishlistItems");
+
+    const wishlistCount =
+        document.getElementById("wishlistCount");
+
+    wishlistItems.innerHTML = "";
+
+    wishlistCount.textContent = wishlist.length;
+
+    if (wishlist.length === 0) {
+        wishlistItems.textContent = "Your wishlist is empty.";
+    }
+
+    wishlist.forEach((item, index) => {
+
+        const product = document.createElement("div");
+        product.className = "sidebar-product";
+
+        const img = document.createElement("img");
+        img.src = item.image;
+        img.alt = item.name;
+
+        const info = document.createElement("div");
+        info.className = "sidebar-product-info";
+
+        const title = document.createElement("h5");
+        title.textContent = item.name;
+
+        const price = document.createElement("p");
+        price.textContent = money(item.price);
+
+        const remove = document.createElement("button");
+        remove.textContent = "Remove";
+        remove.className = "remove-item";
+
+        remove.onclick = function () {
+            wishlist.splice(index, 1);
+            updateWishlist();
+        };
+
+        info.append(title, price, remove);
+        product.append(img, info);
+
+        wishlistItems.appendChild(product);
+    });
+
+    saveShoppingData();
+}
+
+
+/* CHECKOUT */
+
+document.getElementById("proceedCheckout")
+    .addEventListener("click", function () {
+
+        if (cart.length === 0) return;
+
+        window.location.href = "costumes.html?checkout=1";
+
+    });
+
+
+/* INITIAL LOAD */
+
+function refreshShoppingData() {
+
+    cart = getSavedData("danceCart");
+    wishlist = getSavedData("danceWishlist");
+
+    updateCart();
+    updateWishlist();
+}
+
+refreshShoppingData();
+
+window.addEventListener("pageshow", refreshShoppingData);
+
+window.addEventListener("storage", function (event) {
+    if (event.key === "danceCart" ||
+        event.key === "danceWishlist") {
+        refreshShoppingData();
+    }
+});
+
+</script>
+
+<!-- SIGN IN / SIGN UP MODAL -->
+<div class="modal fade" id="authModal" tabindex="-1"
+     aria-labelledby="authModalTitle" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content auth-modal">
+
+            <button type="button"
+                    class="btn-close auth-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+            <div class="auth-header">
+                <span>WELCOME TO</span>
+                <h2 id="authModalTitle">
+                    Nirthadhwani <em>Arts</em>
+                </h2>
+                <p>Tradition • Grace • Expression</p>
+            </div>
+
+            <!-- TABS -->
+            <div class="auth-tabs">
+                <button type="button"
+                        class="auth-tab active"
+                        id="signInTab">
+                    SIGN IN
+                </button>
+
+                <button type="button"
+                        class="auth-tab"
+                        id="signUpTab">
+                    SIGN UP
+                </button>
+            </div>
+
+            <!-- SIGN IN FORM -->
+            <form id="signInForm" class="auth-form">
+
+                <h3>Welcome Back</h3>
+                <p>Sign in to your account</p>
+
+                <div class="auth-field">
+                    <label for="loginEmail">Email Address</label>
+                    <div class="auth-input">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email"
+                               id="loginEmail"
+                               placeholder="Enter your email"
+                               autocomplete="email"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="loginPassword">Password</label>
+                    <div class="auth-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"
+                               id="loginPassword"
+                               placeholder="Enter password"
+                               autocomplete="current-password"
+                               required>
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    SIGN IN
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="auth-switch">
+                    Don't have an account?
+                    <a href="#" id="goSignUp">Sign Up</a>
+                </p>
+
+            </form>
+
+            <!-- SIGN UP FORM -->
+            <form id="signUpForm" class="auth-form"
+                  style="display:none;">
+
+                <h3>Create Account</h3>
+                <p>Join the Nirthadhwani Arts family</p>
+
+                <div class="auth-field">
+                    <label for="registerName">Full Name</label>
+                    <div class="auth-input">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text"
+                               id="registerName"
+                               placeholder="Enter full name"
+                               autocomplete="name"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="registerEmail">Email Address</label>
+                    <div class="auth-input">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email"
+                               id="registerEmail"
+                               placeholder="Enter email"
+                               autocomplete="email"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="registerPassword">Password</label>
+                    <div class="auth-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"
+                               id="registerPassword"
+                               placeholder="Create password"
+                               autocomplete="new-password"
+                               minlength="8"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="auth-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"
+                               id="confirmPassword"
+                               placeholder="Confirm password"
+                               autocomplete="new-password"
+                               minlength="8"
+                               required>
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    CREATE ACCOUNT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="auth-switch">
+                    Already have an account?
+                    <a href="#" id="goSignIn">Sign In</a>
+                </p>
+
+            </form>
+
+            <p id="authMessage" class="auth-message"
+               role="status" aria-live="polite"></p>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+/* ELEMENTS */
+
+const signInTab = document.getElementById("signInTab");
+const signUpTab = document.getElementById("signUpTab");
+
+const signInForm = document.getElementById("signInForm");
+const signUpForm = document.getElementById("signUpForm");
+
+const authMessage = document.getElementById("authMessage");
+
+
+/* SHOW SIGN IN */
+
+function showSignIn() {
+
+    signInForm.style.display = "block";
+    signUpForm.style.display = "none";
+
+    signInTab.classList.add("active");
+    signUpTab.classList.remove("active");
+
+    authMessage.textContent = "";
+}
+
+
+/* SHOW SIGN UP */
+
+function showSignUp() {
+
+    signInForm.style.display = "none";
+    signUpForm.style.display = "block";
+
+    signUpTab.classList.add("active");
+    signInTab.classList.remove("active");
+
+    authMessage.textContent = "";
+}
+
+
+/* TAB EVENTS */
+
+signInTab.addEventListener("click", showSignIn);
+signUpTab.addEventListener("click", showSignUp);
+
+document.getElementById("goSignUp")
+    .addEventListener("click", function(e) {
+        e.preventDefault();
+        showSignUp();
+    });
+
+document.getElementById("goSignIn")
+    .addEventListener("click", function(e) {
+        e.preventDefault();
+        showSignIn();
+    });
+
+
+/* SIGN UP FORM VALIDATION */
+
+signUpForm.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const password =
+        document.getElementById("registerPassword").value;
+
+    const confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+
+        authMessage.style.color = "#c03945";
+        authMessage.textContent = "Passwords do not match.";
+        return;
+    }
+
+    authMessage.style.color = "#2e7d32";
+    authMessage.textContent =
+        "Form validated! Connect a backend to create an account.";
+});
+
+
+/* SIGN IN FORM */
+
+signInForm.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    authMessage.style.color = "#a76137";
+    authMessage.textContent =
+        "Connect an authentication backend to sign in.";
+});
+
+</script>
+
+<!-- Rental Enquiry Modal -->
+<div id="enquiryModal" class="enquiry-modal">
+
+    <div class="enquiry-box">
+
+        <span class="close-btn" onclick="closeEnquiry()">&times;</span>
+
+        <h2>Costume Rental Enquiry</h2>
+
+        <p id="selectedCostume"></p>
+
+        <form id="enquiryForm">
+
+            <input type="hidden" id="costumeName">
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text"
+                       id="customerName"
+                       placeholder="Enter your name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel"
+                       id="phoneNumber"
+                       placeholder="Enter your phone number"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Costume Size</label>
+                <select id="costumeSize" required>
+                    <option value="">Select Size</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Rental Date</label>
+                <input type="date"
+                       id="rentalDate"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Return Date</label>
+                <input type="date"
+                       id="returnDate"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="message"
+                          placeholder="Any additional requirements"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                SEND ENQUIRY ON WHATSAPP
+            </button>
+
+        </form>
+
+    </div>
+</div>
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>

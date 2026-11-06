@@ -1,0 +1,2444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dance Costumes | Nirthadhwani Arts</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+          rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fffaf5;
+            color: #493326;
+        }
+
+        /* NAVBAR */
+
+       .navbar {
+    background:  #fffaf5 !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    padding: 18px 0;
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+
+.academy-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ROUND LOGO */
+
+.academy-logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid #b8860b;
+    background: #fffaf5;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.academy-logo:hover {
+    transform: scale(1.08);
+}
+
+/* BRAND NAME */
+
+.brand-name {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #4b1f1f;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.brand-name span {
+    color: #b8860b;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .academy-brand {
+        gap: 8px;
+    }
+
+    .academy-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+.navbar-brand span {
+    color: #b8860b;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+    position: relative;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #333 !important;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+/* Underline hover effect */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #b8860b;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #b8860b !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Contact button */
+.contact-btn {
+    background: #4b1f1f;
+    color: white;
+    padding: 10px 20px !important;
+    border-radius: 25px;
+    margin-left: 28px !important;
+}
+
+.contact-btn::after {
+    display: none;
+}
+
+.contact-btn:hover {
+    background: #b8860b;
+    color: white !important;
+}
+        /* HERO */
+
+       .costume-hero {
+    width: 100%;
+    min-height: 90vh;
+    padding: 100px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url("dresshome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+        .hero-label {
+            color: white;
+            font-size: 12px;
+            letter-spacing: 4px;
+            font-weight: 600;
+            padding-top: 200px;
+        }
+
+        .costume-hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(42px, 6vw, 68px);
+            font-weight: 600;
+            margin: 15px 0;
+        }
+
+        .costume-hero h1 span {
+            color:white;
+            font-style: italic;
+        }
+
+        .costume-hero p {
+            max-width: 650px;
+            margin: auto;
+            color: white;
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        /* SHOP SECTION */
+
+        .shop-section {
+            padding: 75px 0 100px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .section-heading h2 span {
+            color: #a76137;
+        }
+
+        .section-heading p {
+            color: #8a786a;
+            font-size: 13px;
+        }
+
+        /* FILTER */
+
+        .filter-box {
+            background: #fff;
+            border: 1px solid #eee0d3;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 35px;
+        }
+
+        .filter-box h5 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .filter-btn {
+            padding: 11px 23px;
+            border: 1px solid #d9c2ae;
+            background: transparent;
+            color: #654735;
+            border-radius: 30px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #a76137;
+            border-color: #a76137;
+            color: #fff;
+        }
+
+        /* COSTUME CARDS */
+
+        .costume-card {
+            height: 100%;
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid #f0e5db;
+            transition: 0.35s ease;
+        }
+
+        .costume-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(80, 45, 25, 0.12);
+        }
+
+        .costume-image {
+            height: 310px;
+            position: relative;
+            overflow: hidden;
+            background: #f3e8dd;
+        }
+
+        .costume-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .costume-card:hover .costume-image img {
+            transform: scale(1.06);
+        }
+
+        .costume-category {
+            position: absolute;
+            left: 14px;
+            top: 14px;
+            background: #fffaf5;
+            color: #8a512f;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* WISHLIST */
+
+        .wishlist-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 39px;
+            height: 39px;
+            border: none;
+            border-radius: 50%;
+            background: white;
+            color: #654735;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .wishlist-btn:hover,
+        .wishlist-btn.active {
+            color: #c03945;
+        }
+
+        .wishlist-btn.active i::before {
+            content: "\f415";
+        }
+
+        /* CARD CONTENT */
+
+        .costume-info {
+            padding: 20px;
+        }
+
+        .costume-info h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .costume-description {
+            font-size: 12px;
+            color: #8a786a;
+            line-height: 1.7;
+            min-height: 40px;
+        }
+
+        .costume-price {
+            font-size: 19px;
+            color: #a76137;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+
+        .costume-price small {
+            color: #9b8a7d;
+            font-size: 11px;
+            font-weight: 400;
+        }
+
+        .add-cart-btn {
+            width: 100%;
+            border: 1px solid #a76137;
+            background: #a76137;
+            color: #fff;
+            padding: 12px 10px;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            transition: 0.3s;
+        }
+
+        .add-cart-btn:hover {
+            background: #75452d;
+            border-color: #75452d;
+        }
+
+        .add-cart-btn i {
+            margin-right: 7px;
+        }
+
+        .empty-message {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: #8a786a;
+        }
+
+        /* FOOTER */
+
+       .premium-footer {
+    background: #24140d;
+    color: #fffaf5;
+    padding: 75px 0 25px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 50px;
+}
+
+.footer-brand h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.footer-brand h2 span {
+    color: #d6b36a;
+    font-style: italic;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #bca9a0;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+
+/* SOCIAL LINKS */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* ROUND SOCIAL ICONS */
+.social-links a {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #30251b;
+    color: #d4af62;
+
+    border: 2px solid #d4af62;
+    border-radius: 50%;
+
+    text-decoration: none;
+    box-sizing: border-box;
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* ICON POSITION */
+.social-links a i {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* HOVER EFFECT */
+.social-links a:hover {
+    background-color: #d4af62;
+    color: #21180f;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(212, 175, 98, 0.3);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 576px) {
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-links a i {
+        font-size: 16px;
+    }
+}
+
+/* FOOTER COLUMNS */
+
+.footer-column h4 {
+    color: #d6b36a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+.footer-column a,
+.footer-column p {
+    display: block;
+    color: #bca9a0;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #d6b36a;
+    padding-left: 4px;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-line {
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+    margin: 55px 0 22px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #8f7d74;
+    font-size: 12px;
+}
+
+.footer-bottom strong {
+    color: #d6b36a;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 992px) {
+
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .contact-section {
+        padding: 75px 15px;
+    }
+
+    .contact-heading h2 {
+        font-size: 36px;
+    }
+
+    .contact-info {
+        padding: 45px 25px;
+    }
+
+    .contact-info h3 {
+        font-size: 32px;
+    }
+
+    .contact-form {
+        padding: 35px 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .premium-footer {
+        padding: 55px 20px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+/* Enquiry Button */
+.enquiry-btn {
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enquiry-btn:hover {
+    background: white;
+    color: #5a2424;
+}
+
+
+/* Modal Background */
+.enquiry-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* Form Box */
+.enquiry-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: #fffaf5;
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+}
+
+
+.enquiry-box h2 {
+    color: #5a2424;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+#selectedCostume {
+    text-align: center;
+    color: #a87528;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+
+    font-size: 30px;
+    color: #5a2424;
+    cursor: pointer;
+}
+
+
+/* Form */
+.form-group {
+    margin-bottom: 16px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #4b2929;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #d8c2ad;
+    border-radius: 8px;
+
+    background: white;
+    font-size: 14px;
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #a87528;
+}
+
+
+.form-group textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #25D366;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.submit-btn:hover {
+    background: #1da851;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .enquiry-box {
+        padding: 25px 20px;
+    }
+
+    .enquiry-box h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =====================================
+   FONT AWESOME ICON COLORS
+===================================== */
+
+/* Default Icons */
+i.fa,
+i.fas,
+i.far,
+i.fab,
+.fa-solid,
+.fa-regular,
+.fa-brands {
+    color: #800020;
+    transition: color 0.3s ease;
+}
+
+/* Navbar Icons */
+.navbar i,
+.navbar .bi {
+    color: #800020;
+}
+
+/* Navbar Icon Hover */
+.navbar i:hover,
+.navbar .bi:hover {
+    color: #b8860b;
+}
+
+/* User Icon */
+.fa-user {
+    color: #800020 !important;
+}
+
+/* Shopping Cart Icon */
+.fa-cart-shopping,
+.fa-shopping-cart {
+    color: #b8860b;
+}
+
+/* Heart / Wishlist Icon */
+.fa-heart {
+    color: #c03945;
+}
+
+/* Social Media Icons */
+.social-links i {
+    color: #d6b36a;
+}
+
+/* Social Icon Hover */
+.social-links a:hover i {
+    color: #24140d;
+}
+
+/* Contact Icons */
+.contact-icon,
+.contact-info i {
+    color: #b8860b;
+}
+
+/* Enquiry Button Icons */
+.enquiry-btn i {
+    color: #ffffff;
+}
+
+/* Submit Button Icons */
+.submit-btn i {
+    color: #ffffff;
+}
+
+/* Close Icon */
+.close-btn i {
+    color: #800020;
+}
+
+/* Filter Icons */
+.filter-btn i {
+    color: inherit;
+}
+
+/* Add to Cart Button Icons */
+.add-cart-btn i {
+    color: #ffffff;
+}
+
+/* Wishlist Active Icon */
+.wishlist-btn.active i {
+    color: #c03945;
+}
+
+/* Footer Icons */
+.premium-footer i {
+    color: #d6b36a;
+}
+
+/* Footer Icon Hover */
+.social-links a:hover i {
+    color: #24140d;
+}
+
+
+
+/* SIDE MODAL */
+
+.shop-sidebar {
+    width: 420px !important;
+    max-width: 100%;
+    background: #fffaf5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop-sidebar .offcanvas-header {
+    padding: 25px;
+    border-bottom: 1px solid #ead8c8;
+}
+
+.shop-sidebar h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #4b1f1f;
+}
+
+.shop-sidebar .offcanvas-body {
+    padding: 25px;
+}
+
+.sidebar-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ead8c8;
+}
+
+.sidebar-product img {
+    width: 85px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sidebar-product-info {
+    flex: 1;
+}
+
+.sidebar-product-info h5 {
+    font-size: 14px;
+    color: #493326;
+}
+
+.sidebar-product-info p {
+    color: #a76137;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantity-box button,
+.remove-item {
+    border: 1px solid #d9c2ae;
+    background: white;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.remove-item {
+    color: #c03945;
+}
+
+.sidebar-footer {
+    padding: 25px;
+    border-top: 1px solid #ead8c8;
+}
+
+.sidebar-footer h5 {
+    margin-bottom: 15px;
+}
+
+.sidebar-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #a76137;
+    color: white;
+}
+
+.sidebar-btn:hover {
+    background: #75452d;
+}
+
+#cartCount,
+#wishlistCount {
+    font-size: 11px;
+    color: #a76137;
+    font-weight: 700;
+}
+/* ==============================
+   SIGN IN & SIGN UP MODAL
+============================== */
+
+.auth-modal {
+    position: relative;
+    background: #fffaf5;
+    border: none;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.auth-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+/* HEADER */
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-header span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a76137;
+    font-weight: 600;
+}
+
+.auth-header h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 34px;
+    color: #4b1f1f;
+    margin: 10px 0;
+}
+
+.auth-header h2 em {
+    color: #b8860b;
+}
+
+.auth-header p {
+    font-size: 12px;
+    color: #8a786a;
+}
+
+/* TABS */
+
+.auth-tabs {
+    display: flex;
+    background: #f2e5d8;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    border-radius: 25px;
+    color: #654735;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.auth-tab.active {
+    background: #4b1f1f;
+    color: white;
+}
+
+/* FORMS */
+
+.auth-form h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 30px;
+    color: #4b1f1f;
+    text-align: center;
+}
+
+.auth-form > p {
+    text-align: center;
+    color: #8a786a;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.auth-field {
+    margin-bottom: 18px;
+}
+
+.auth-field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #493326;
+    margin-bottom: 8px;
+}
+
+.auth-input {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #e0cbbb;
+    border-radius: 9px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.auth-input:focus-within {
+    border-color: #a76137;
+}
+
+.auth-input i {
+    color: #a76137;
+    font-size: 14px;
+}
+
+.auth-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 14px 12px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+/* SUBMIT BUTTON */
+
+.auth-submit {
+    width: 100%;
+    background: #4b1f1f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 14px;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.auth-submit:hover {
+    background: #a76137;
+}
+
+.auth-submit i {
+    margin-left: 10px;
+    color: white;
+}
+
+/* SWITCH LINKS */
+
+.auth-switch {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 12px;
+    color: #8a786a;
+}
+
+.auth-switch a {
+    color: #a76137;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.auth-message {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    .auth-modal {
+        padding: 30px 20px;
+    }
+
+    .auth-header h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* CHECKOUT */
+.checkout-panel { background: #fffaf5; color: #493326; border-radius: 16px; }
+.checkout-panel .modal-header { border-bottom: 1px solid #ead8c8; }
+.checkout-panel h2, .checkout-panel h5 { font-family: 'Cormorant Garamond', serif; }
+.checkout-summary { background: #f3e5d6; padding: 20px; border-radius: 12px; }
+.checkout-summary .checkout-line { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; }
+.checkout-panel .form-control:focus { border-color: #a76137; box-shadow: 0 0 0 .2rem rgba(167,97,55,.15); }
+#proceedCheckout:disabled { opacity: .5; cursor: not-allowed; }
+
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+         <a class="navbar-brand academy-brand" href="index.html">
+
+            <img src="logo.png"
+                 alt="Nirthadhwani Arts Logo"
+                 class="academy-logo">
+
+            <span class="brand-name">
+                Nirthadhwani <span><i>Arts</i></span>
+            </span>
+
+        </a>
+
+
+        <!-- Mobile Menu -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mynavbar"
+                aria-controls="mynavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href=" index.html#about" class="nav-link">OUR STORY</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#course" class="nav-link">OUR COURSES</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#costumes" class="nav-link">COSTUMES</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#gallery" class="nav-link">GALLERY</a>
+                </li>
+                
+                
+                
+<li class="nav-item">
+    <a href="#"
+       class="nav-link"
+       data-bs-toggle="modal"
+       data-bs-target="#authModal"
+       aria-label="Sign in or sign up">
+        <i class="fa-solid fa-user"></i>
+    </a>
+
+</li>
+               
+                
+
+
+<li class="nav-item">
+    <a href="#" class="nav-link"
+       data-bs-toggle="offcanvas"
+       data-bs-target="#cartSidebar">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+    </a>
+</li>
+
+<!-- Wishlist -->
+<li class="nav-item">
+    <a href="#" class="nav-link"
+       data-bs-toggle="offcanvas"
+       data-bs-target="#wishlistSidebar">
+        <i class="fa-solid fa-heart"></i>
+        <span id="wishlistCount">0</span>
+    </a>
+</li>
+
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link contact-btn" style="color:white!important;">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="costume-hero">
+
+    <span class="hero-label">NIRTHADHWANI ARTS COLLECTION</span>
+
+    <h1>Traditional Dance <span>Costumes</span></h1>
+
+    <p>
+        Discover beautiful traditional costumes inspired by the
+        grace and elegance of Bharatanatyam, Mohiniyattam and Kuchipudi.
+        Find the perfect attire for your next performance.
+    </p>
+
+</section>
+
+
+<!-- SHOP SECTION -->
+
+<section class="shop-section" id="shop">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="hero-label">SHOP BY DANCE STYLE</span>
+
+            <h2>Explore Our <span>Collection</span></h2>
+
+            <p>Choose your dance style and discover your favourite costumes.</p>
+
+        </div>
+
+
+        <!-- FILTER SECTION -->
+
+        <div class="filter-box">
+
+            <h5 class="text-center">
+                <i class="bi bi-funnel me-2"></i>Filter Costumes
+            </h5>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active"
+                        data-filter="all">
+                    All Costumes
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="bharatanatyam">
+                    Bharatanatyam
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="mohiniyattam">
+                    Mohiniyattam
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="kuchipudi">
+                    Kuchipudi
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- COSTUME CARDS -->
+
+        <div class="row g-4" id="costumeList">
+
+
+            <!-- BHARATANATYAM 1 -->
+
+            <div class="col-6 col-lg-4 costume-item"
+                 data-category="bharatanatyam">
+
+                <div class="costume-card">
+
+                    <div class="costume-image">
+
+                        <img src="btnymdress.png"
+                             alt="Bharatanatyam traditional costume">
+
+                        <span class="costume-category">BHARATANATYAM</span>
+
+                        <button class="wishlist-btn"
+                                type="button"
+                                aria-label="Add Bharatanatyam costume to wishlist"
+                                aria-pressed="false"
+                                data-name="Bharatanatyam Classic Costume">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="costume-info">
+
+                        <h3>Classic Costume</h3>
+
+                        <p class="costume-description">
+                            Traditional pleated dance costume for performances.
+                        </p>
+
+                        <div class="costume-price">
+                            ₹2,500 <small>/ set</small>
+                        </div>
+
+                        <button class="add-cart-btn"
+                                type="button"
+                                data-name="Bharatanatyam Classic Costume"
+                                data-price="2500">
+                            <i class="bi bi-bag-plus"></i> ADD TO CART
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- BHARATANATYAM 2 -->
+
+            <div class="col-6 col-lg-4 costume-item"
+                 data-category="bharatanatyam">
+
+                <div class="costume-card">
+
+                    <div class="costume-image">
+
+                        <img src="bhclt.png"
+                             alt="Bharatanatyam performance attire">
+
+                        <span class="costume-category">BHARATANATYAM</span>
+
+                        <button class="wishlist-btn"
+                                type="button"
+                                aria-label="Add Bharatanatyam costume to wishlist"
+                                aria-pressed="false"
+                                data-name="Bharatanatyam Performance Costume">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="costume-info">
+
+                        <h3>Performance Costume</h3>
+
+                        <p class="costume-description">
+                            Colourful traditional attire for stage programmes.
+                        </p>
+
+                        <div class="costume-price">
+                            ₹3,000 <small>/ set</small>
+                        </div>
+
+                        <button class="add-cart-btn"
+                                type="button"
+                                data-name="Bharatanatyam Performance Costume"
+                                data-price="3000">
+                            <i class="bi bi-bag-plus"></i> ADD TO CART
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- MOHINIYATTAM 1 -->
+
+            <div class="col-6 col-lg-4 costume-item"
+                 data-category="mohiniyattam">
+
+                <div class="costume-card">
+
+                    <div class="costume-image">
+
+                        <img src="mhntymdress.png"
+                             alt="Mohiniyattam Kerala costume">
+
+                        <span class="costume-category">MOHINIYATTAM</span>
+
+                        <button class="wishlist-btn"
+                                type="button"
+                                aria-label="Add Mohiniyattam costume to wishlist"
+                                aria-pressed="false"
+                                data-name="Mohiniyattam Classic Costume">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="costume-info">
+
+                        <h3>Kerala Classic</h3>
+
+                        <p class="costume-description">
+                            Elegant cream and gold traditional dance attire.
+                        </p>
+
+                        <div class="costume-price">
+                            ₹2,200 <small>/ set</small>
+                        </div>
+
+                        <button class="add-cart-btn"
+                                type="button"
+                                data-name="Mohiniyattam Classic Costume"
+                                data-price="2200">
+                            <i class="bi bi-bag-plus"></i> ADD TO CART
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+
+            <!-- KUCHIPUDI 1 -->
+
+            <div class="col-6 col-lg-4 costume-item"
+                 data-category="kuchipudi">
+
+                <div class="costume-card">
+
+                    <div class="costume-image">
+
+                        <img src="kchpddress.png"
+                             alt="Kuchipudi traditional costume">
+
+                        <span class="costume-category">KUCHIPUDI</span>
+
+                        <button class="wishlist-btn"
+                                type="button"
+                                aria-label="Add Kuchipudi costume to wishlist"
+                                aria-pressed="false"
+                                data-name="Kuchipudi Classic Costume">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="costume-info">
+
+                        <h3>Classic Costume</h3>
+
+                        <p class="costume-description">
+                            Traditional costume designed for graceful movement.
+                        </p>
+
+                        <div class="costume-price">
+                            ₹2,600 <small>/ set</small>
+                        </div>
+
+                        <button class="add-cart-btn"
+                                type="button"
+                                data-name="Kuchipudi Classic Costume"
+                                data-price="2600">
+                            <i class="bi bi-bag-plus"></i> ADD TO CART
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- KUCHIPUDI 2 -->
+
+            <div class="col-6 col-lg-4 costume-item"
+                 data-category="kuchipudi">
+
+                <div class="costume-card">
+
+                    <div class="costume-image">
+
+                        <img src="stegedress.png"
+                             alt="Kuchipudi stage costume">
+
+                        <span class="costume-category">KUCHIPUDI</span>
+
+                        <button class="wishlist-btn"
+                                type="button"
+                                aria-label="Add Kuchipudi costume to wishlist"
+                                aria-pressed="false"
+                                data-name="Kuchipudi Performance Costume">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="costume-info">
+
+                        <h3>Stage Collection</h3>
+
+                        <p class="costume-description">
+                            Beautiful stage attire for dance presentations.
+                        </p>
+
+                        <div class="costume-price">
+                            ₹3,200 <small>/ set</small>
+                        </div>
+
+                        <button class="add-cart-btn"
+                                type="button"
+                                data-name="Kuchipudi Performance Costume"
+                                data-price="3200">
+                            <i class="bi bi-bag-plus"></i> ADD TO CART
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="empty-message" id="emptyMessage">
+            No costumes found in this category.
+        </div>
+
+
+        <!-- CART SUMMARY -->
+
+      <!--  <div class="mt-5 p-4 rounded-3 text-center"
+             id="cart"
+             style="background:#f3e5d6;">
+
+            <h3 style="font-family:'Cormorant Garamond',serif;">
+                <i class="bi bi-bag-heart me-2"></i>Your Shopping Cart
+            </h3>
+
+            <p class="mb-1" id="cartSummary">
+                Your cart is empty.
+            </p>
+
+            <p class="fw-semibold" id="cartTotal">
+                Total: ₹0
+            </p>
+
+            <button type="button"
+                    class="filter-btn"
+                    id="clearCart">
+                CLEAR CART
+            </button>
+
+        </div>-->
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="premium-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <!-- BRAND -->
+            <div class="footer-brand">
+
+                <h2>Nirthadhwani <span>Arts</span></h2>
+
+                <p>
+                    Celebrating the timeless beauty of Indian classical dance
+                    through tradition, expression and graceful movement.
+                </p>
+
+                <div class="social-links">
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/YOUR_USERNAME/"
+                           aria-label="Instagram"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/YOUR_PAGE/"
+                           aria-label="Facebook"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@YOUR_CHANNEL"
+                           aria-label="YouTube"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+
+                <h4>QUICK LINKS</h4>
+
+                <a href="index.html">Home</a>
+                <a href="#about">Our Story</a>
+                <a href="#course">Our Courses</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#costumes">Costumes</a>
+                <a href="trainer.html">Trainer</a>
+
+            </div>
+
+
+            <!-- COURSES -->
+            <div class="footer-column">
+
+                <h4>OUR COURSES</h4>
+
+                <a href="Bharatanatyam.html">Bharatanatyam</a>
+                <a href="Mohiniyattam.html">Mohiniyattam</a>
+                <a href="Kuchipudi.html">Kuchipudi</a>
+                <a href="Kathak.html">Kathak</a>
+                <a href="Kathakali.html">Kathakali</a>
+                <a href="Odissi.html">Odissi</a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-column">
+
+                <h4>CONTACT</h4>
+
+                <p>Online & Offline Classes</p>
+
+                <a href="tel:+919XXXXXXXXX">
+                    +91 7012494994
+                </a>
+
+                <a href="mailto:nirthadhwaniarts@gmail.com">
+                    nirthadhwaniarts@gmail.com
+                </a>
+
+                <p>All Age Groups Welcome</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-line"></div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 <strong>Nirthadhwani Arts</strong>.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Classical Dance • Tradition • Grace
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Rental Enquiry Modal -->
+<div id="enquiryModal" class="enquiry-modal">
+
+    <div class="enquiry-box">
+
+        <span class="close-btn" onclick="closeEnquiry()">&times;</span>
+
+        <h2>Costume Rental Enquiry</h2>
+
+        <p id="selectedCostume"></p>
+
+        <form id="enquiryForm">
+
+            <input type="hidden" id="costumeName">
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text"
+                       id="customerName"
+                       placeholder="Enter your name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel"
+                       id="phoneNumber"
+                       placeholder="Enter your phone number"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Costume Size</label>
+                <select id="costumeSize" required>
+                    <option value="">Select Size</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Rental Date</label>
+                <input type="date"
+                       id="rentalDate"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Return Date</label>
+                <input type="date"
+                       id="returnDate"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="message"
+                          placeholder="Any additional requirements"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                SEND ENQUIRY ON WHATSAPP
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+
+<!-- CART SIDE MODAL -->
+<div class="offcanvas offcanvas-end shop-sidebar"
+     tabindex="-1" id="cartSidebar">
+
+    <div class="offcanvas-header">
+        <h4>My Shopping Cart</h4>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div id="cartItems"></div>
+    </div>
+
+    <div class="sidebar-footer">
+        <h5 id="sideCartTotal">Total: ₹0</h5>
+        <button type="button" class="sidebar-btn mb-2" id="proceedCheckout">PROCEED TO CHECKOUT</button>
+        <button class="sidebar-btn" id="sideClearCart">
+            CLEAR CART
+        </button>
+    </div>
+</div>
+
+
+<!-- WISHLIST SIDE MODAL -->
+<div class="offcanvas offcanvas-end shop-sidebar"
+     tabindex="-1" id="wishlistSidebar">
+
+    <div class="offcanvas-header">
+        <h4>My Wishlist</h4>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div id="wishlistItems"></div>
+    </div>
+</div>
+
+
+
+
+<!-- CHECKOUT FORM (front-end only; no payment processing) -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+    <div class="modal-content checkout-panel">
+      <div class="modal-header">
+        <h2 class="modal-title fs-3" id="checkoutTitle">Proceed to Checkout</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="checkout-summary mb-4">
+          <h5>Order Summary</h5>
+          <div id="checkoutItems"></div>
+          <p class="fw-bold mt-3 mb-0" id="checkoutTotal">Total: ₹0</p>
+        </div>
+        <form id="checkoutForm">
+          <div class="row g-3">
+            <div class="col-md-6"><label for="checkoutName" class="form-label">Full Name *</label><input id="checkoutName" class="form-control" required autocomplete="name"></div>
+            <div class="col-md-6"><label for="checkoutPhone" class="form-label">Phone Number *</label><input id="checkoutPhone" type="tel" class="form-control" required pattern="[0-9+() -]{10,18}" autocomplete="tel"></div>
+            <div class="col-md-6"><label for="checkoutEmail" class="form-label">Email (optional)</label><input id="checkoutEmail" type="email" class="form-control" autocomplete="email"></div>
+            <div class="col-md-6"><label for="checkoutPin" class="form-label">PIN Code *</label><input id="checkoutPin" class="form-control" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required autocomplete="postal-code"></div>
+            <div class="col-12"><label for="checkoutAddress" class="form-label">Delivery Address *</label><textarea id="checkoutAddress" class="form-control" rows="2" required autocomplete="street-address"></textarea></div>
+            <div class="col-md-6"><label for="checkoutCity" class="form-label">City / District *</label><input id="checkoutCity" class="form-control" required autocomplete="address-level2"></div>
+            <div class="col-md-6"><label for="checkoutState" class="form-label">State *</label><input id="checkoutState" class="form-control" value="Kerala" required autocomplete="address-level1"></div>
+            <div class="col-12"><label for="checkoutNotes" class="form-label">Additional Notes (optional)</label><textarea id="checkoutNotes" class="form-control" rows="2"></textarea></div>
+          </div>
+          <p class="small text-muted mt-3">This is a checkout enquiry form only. No payment is collected and no order is sent automatically.</p>
+          <button type="submit" class="sidebar-btn mt-2" id="prepareOrder">PREPARE ORDER DETAILS</button>
+        </form>
+        <div id="checkoutResult" class="mt-3" role="status" aria-live="polite" hidden>
+          <p class="mb-2">Your order details are ready. Copy them to send to the costume shop.</p>
+          <textarea id="checkoutOrderText" class="form-control" rows="10" readonly></textarea>
+          <button type="button" class="sidebar-btn mt-2" id="copyCheckout">COPY ORDER DETAILS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap must load before our custom JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+/* FILTER COSTUMES */
+const filterButtons = document.querySelectorAll('.filter-btn[data-filter]');
+const costumeItems = document.querySelectorAll('.costume-item');
+const emptyMessage = document.getElementById('emptyMessage');
+filterButtons.forEach(button => button.addEventListener('click', () => {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    let visible = 0;
+    costumeItems.forEach(item => {
+        const match = button.dataset.filter === 'all' || item.dataset.category === button.dataset.filter;
+        item.style.display = match ? '' : 'none';
+        if (match) visible++;
+    });
+    if (emptyMessage) emptyMessage.style.display = visible ? 'none' : 'block';
+}));
+
+/* CART AND WISHLIST */
+function readSaved(key) {
+    try {
+        const value = JSON.parse(localStorage.getItem(key));
+        return Array.isArray(value) ? value : [];
+    } catch (error) { return []; }
+}
+let cart = readSaved('danceCart');
+let wishlist = readSaved('danceWishlist');
+const money = value => '₹' + Number(value).toLocaleString('en-IN');
+const byId = id => document.getElementById(id);
+
+function getProduct(button) {
+    const card = button.closest('.costume-card');
+    const addButton = card.querySelector('.add-cart-btn');
+    return {
+        name: addButton.dataset.name,
+        price: Number(addButton.dataset.price),
+        image: card.querySelector('.costume-image img').getAttribute('src')
+    };
+}
+function saveData() {
+    try {
+        localStorage.setItem('danceCart', JSON.stringify(cart));
+        localStorage.setItem('danceWishlist', JSON.stringify(wishlist));
+    } catch (error) { console.warn('Could not save shopping data:', error); }
+}
+function openSidebar(id) {
+    const element = byId(id);
+    if (element && window.bootstrap) bootstrap.Offcanvas.getOrCreateInstance(element).show();
+}
+function makeButton(label, onClick, className = '') {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = label;
+    if (className) button.className = className;
+    button.addEventListener('click', onClick);
+    return button;
+}
+function updateCart() {
+    const container = byId('cartItems');
+    if (!container) return;
+    container.replaceChildren();
+    let total = 0, count = 0;
+    if (!cart.length) container.textContent = 'Your cart is empty.';
+    cart.forEach((item, index) => {
+        const quantity = Number(item.quantity) || 1;
+        total += Number(item.price) * quantity;
+        count += quantity;
+        const row = document.createElement('div');
+        row.className = 'sidebar-product';
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+        const info = document.createElement('div');
+        info.className = 'sidebar-product-info';
+        const title = document.createElement('h5');
+        title.textContent = item.name;
+        const price = document.createElement('p');
+        price.textContent = money(item.price) + ' × ' + quantity + ' = ' + money(item.price * quantity);
+        const controls = document.createElement('div');
+        controls.className = 'quantity-box';
+        const qty = document.createElement('span');
+        qty.textContent = quantity;
+        controls.append(
+            makeButton('−', () => changeQuantity(index, -1)),
+            qty,
+            makeButton('+', () => changeQuantity(index, 1)),
+            makeButton('Remove', () => removeCart(index), 'remove-item')
+        );
+        info.append(title, price, controls);
+        row.append(img, info);
+        container.append(row);
+    });
+    if (byId('cartCount')) byId('cartCount').textContent = count;
+    if (byId('sideCartTotal')) byId('sideCartTotal').textContent = 'Total: ' + money(total);
+    if (byId('proceedCheckout')) byId('proceedCheckout').disabled = count === 0;
+    // The original inline cart summary is commented out; update it only if it exists.
+    if (byId('cartSummary')) byId('cartSummary').textContent = count ? count + ' costume(s) in cart' : 'Your cart is empty.';
+    if (byId('cartTotal')) byId('cartTotal').textContent = 'Total: ' + money(total);
+    saveData();
+}
+function changeQuantity(index, amount) {
+    if (!cart[index]) return;
+    cart[index].quantity = (Number(cart[index].quantity) || 1) + amount;
+    if (cart[index].quantity <= 0) cart.splice(index, 1);
+    updateCart();
+}
+function removeCart(index) { cart.splice(index, 1); updateCart(); }
+function clearCart() { cart = []; updateCart(); }
+
+document.querySelectorAll('.add-cart-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const product = getProduct(button);
+        const existing = cart.find(item => item.name === product.name);
+        if (existing) existing.quantity = (Number(existing.quantity) || 1) + 1;
+        else cart.push({ ...product, quantity: 1 });
+        updateCart();
+        openSidebar('cartSidebar');
+    });
+});
+if (byId('sideClearCart')) byId('sideClearCart').addEventListener('click', clearCart);
+if (byId('clearCart')) byId('clearCart').addEventListener('click', clearCart);
+
+function updateWishlist() {
+    const container = byId('wishlistItems');
+    if (!container) return;
+    container.replaceChildren();
+    if (!wishlist.length) container.textContent = 'Your wishlist is empty.';
+    wishlist.forEach((item, index) => {
+        const row = document.createElement('div');
+        row.className = 'sidebar-product';
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+        const info = document.createElement('div');
+        info.className = 'sidebar-product-info';
+        const title = document.createElement('h5');
+        title.textContent = item.name;
+        const price = document.createElement('p');
+        price.textContent = money(item.price);
+        info.append(title, price, makeButton('Remove', () => {
+            wishlist.splice(index, 1);
+            updateWishlist();
+        }, 'remove-item'));
+        row.append(img, info);
+        container.append(row);
+    });
+    if (byId('wishlistCount')) byId('wishlistCount').textContent = wishlist.length;
+    document.querySelectorAll('.wishlist-btn').forEach(button => {
+        const active = wishlist.some(item => item.name === button.dataset.name);
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+        const icon = button.querySelector('i');
+        if (icon) icon.className = active ? 'bi bi-heart-fill' : 'bi bi-heart';
+    });
+    saveData();
+}
+document.querySelectorAll('.wishlist-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const product = getProduct(button);
+        const index = wishlist.findIndex(item => item.name === product.name);
+        if (index === -1) wishlist.push(product);
+        else wishlist.splice(index, 1);
+        updateWishlist();
+        openSidebar('wishlistSidebar');
+    });
+});
+
+/* CHECKOUT */
+function renderCheckout() {
+    const items = byId('checkoutItems');
+    items.replaceChildren();
+    cart.forEach(item => {
+        const row = document.createElement('div');
+        row.className = 'checkout-line';
+        const label = document.createElement('span');
+        label.textContent = item.name + ' × ' + item.quantity;
+        const price = document.createElement('strong');
+        price.textContent = money(item.price * item.quantity);
+        row.append(label, price);
+        items.append(row);
+    });
+    byId('checkoutTotal').textContent = 'Total: ' + money(cart.reduce((sum, item) => sum + item.price * item.quantity, 0));
+    byId('checkoutResult').hidden = true;
+}
+byId('proceedCheckout').addEventListener('click', () => {
+    if (!cart.length) return;
+    renderCheckout();
+    const sidebar = bootstrap.Offcanvas.getInstance(byId('cartSidebar'));
+    if (sidebar) sidebar.hide();
+    bootstrap.Modal.getOrCreateInstance(byId('checkoutModal')).show();
+});
+byId('checkoutForm').addEventListener('submit', event => {
+    event.preventDefault();
+    if (!cart.length) { alert('Your cart is empty.'); return; }
+    const field = id => byId(id).value.trim();
+    const lines = [
+        'NIRTHADHWANI ARTS - COSTUME ORDER ENQUIRY',
+        '',
+        ...cart.map(item => item.name + ' × ' + item.quantity + ' — ' + money(item.price * item.quantity)),
+        'Total: ' + money(cart.reduce((sum, item) => sum + item.price * item.quantity, 0)),
+        '',
+        'Name: ' + field('checkoutName'),
+        'Phone: ' + field('checkoutPhone'),
+        'Email: ' + field('checkoutEmail'),
+        'Address: ' + field('checkoutAddress'),
+        'City / District: ' + field('checkoutCity'),
+        'State: ' + field('checkoutState'),
+        'PIN Code: ' + field('checkoutPin'),
+        'Notes: ' + field('checkoutNotes')
+    ];
+    byId('checkoutOrderText').value = lines.join('\n');
+    byId('checkoutResult').hidden = false;
+});
+byId('copyCheckout').addEventListener('click', async () => {
+    const value = byId('checkoutOrderText').value;
+    try {
+        await navigator.clipboard.writeText(value);
+        byId('copyCheckout').textContent = 'COPIED!';
+    } catch (error) {
+        byId('checkoutOrderText').focus();
+        byId('checkoutOrderText').select();
+        byId('copyCheckout').textContent = 'SELECTED — COPY MANUALLY';
+    }
+});
+
+updateCart();
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("checkout") === "1" && cart.length > 0) {
+
+    renderCheckout();
+
+    bootstrap.Modal.getOrCreateInstance(
+        document.getElementById("checkoutModal")
+    ).show();
+
+    window.history.replaceState(
+        {},
+        "",
+        window.location.pathname
+    );
+}
+updateWishlist();
+</script>
+
+
+
+<!-- SIGN IN / SIGN UP MODAL -->
+<div class="modal fade" id="authModal" tabindex="-1"
+     aria-labelledby="authModalTitle" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content auth-modal">
+
+            <button type="button"
+                    class="btn-close auth-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+            <div class="auth-header">
+                <span>WELCOME TO</span>
+                <h2 id="authModalTitle">
+                    Nirthadhwani <em>Arts</em>
+                </h2>
+                <p>Tradition • Grace • Expression</p>
+            </div>
+
+            <!-- TABS -->
+            <div class="auth-tabs">
+                <button type="button"
+                        class="auth-tab active"
+                        id="signInTab">
+                    SIGN IN
+                </button>
+
+                <button type="button"
+                        class="auth-tab"
+                        id="signUpTab">
+                    SIGN UP
+                </button>
+            </div>
+
+            <!-- SIGN IN FORM -->
+            <form id="signInForm" class="auth-form">
+
+                <h3>Welcome Back</h3>
+                <p>Sign in to your account</p>
+
+                <div class="auth-field">
+                    <label for="loginEmail">Email Address</label>
+                    <div class="auth-input">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email"
+                               id="loginEmail"
+                               placeholder="Enter your email"
+                               autocomplete="email"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="loginPassword">Password</label>
+                    <div class="auth-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"
+                               id="loginPassword"
+                               placeholder="Enter password"
+                               autocomplete="current-password"
+                               required>
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    SIGN IN
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="auth-switch">
+                    Don't have an account?
+                    <a href="#" id="goSignUp">Sign Up</a>
+                </p>
+
+            </form>
+
+            <!-- SIGN UP FORM -->
+            <form id="signUpForm" class="auth-form"
+                  style="display:none;">
+
+                <h3>Create Account</h3>
+                <p>Join the Nirthadhwani Arts family</p>
+
+                <div class="auth-field">
+                    <label for="registerName">Full Name</label>
+                    <div class="auth-input">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text"
+                               id="registerName"
+                               placeholder="Enter full name"
+                               autocomplete="name"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="registerEmail">Email Address</label>
+                    <div class="auth-input">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email"
+                               id="registerEmail"
+                               placeholder="Enter email"
+                               autocomplete="email"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="registerPassword">Password</label>
+                    <div class="auth-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"
+                               id="registerPassword"
+                               placeholder="Create password"
+                               autocomplete="new-password"
+                               minlength="8"
+                               required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="auth-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"
+                               id="confirmPassword"
+                               placeholder="Confirm password"
+                               autocomplete="new-password"
+                               minlength="8"
+                               required>
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    CREATE ACCOUNT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <p class="auth-switch">
+                    Already have an account?
+                    <a href="#" id="goSignIn">Sign In</a>
+                </p>
+
+            </form>
+
+            <p id="authMessage" class="auth-message"
+               role="status" aria-live="polite"></p>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+/* ELEMENTS */
+
+const signInTab = document.getElementById("signInTab");
+const signUpTab = document.getElementById("signUpTab");
+
+const signInForm = document.getElementById("signInForm");
+const signUpForm = document.getElementById("signUpForm");
+
+const authMessage = document.getElementById("authMessage");
+
+
+/* SHOW SIGN IN */
+
+function showSignIn() {
+
+    signInForm.style.display = "block";
+    signUpForm.style.display = "none";
+
+    signInTab.classList.add("active");
+    signUpTab.classList.remove("active");
+
+    authMessage.textContent = "";
+}
+
+
+/* SHOW SIGN UP */
+
+function showSignUp() {
+
+    signInForm.style.display = "none";
+    signUpForm.style.display = "block";
+
+    signUpTab.classList.add("active");
+    signInTab.classList.remove("active");
+
+    authMessage.textContent = "";
+}
+
+
+/* TAB EVENTS */
+
+signInTab.addEventListener("click", showSignIn);
+signUpTab.addEventListener("click", showSignUp);
+
+document.getElementById("goSignUp")
+    .addEventListener("click", function(e) {
+        e.preventDefault();
+        showSignUp();
+    });
+
+document.getElementById("goSignIn")
+    .addEventListener("click", function(e) {
+        e.preventDefault();
+        showSignIn();
+    });
+
+
+/* SIGN UP FORM VALIDATION */
+
+signUpForm.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const password =
+        document.getElementById("registerPassword").value;
+
+    const confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+
+        authMessage.style.color = "#c03945";
+        authMessage.textContent = "Passwords do not match.";
+        return;
+    }
+
+    authMessage.style.color = "#2e7d32";
+    authMessage.textContent =
+        "Form validated! Connect a backend to create an account.";
+});
+
+
+/* SIGN IN FORM */
+
+signInForm.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    authMessage.style.color = "#a76137";
+    authMessage.textContent =
+        "Connect an authentication backend to sign in.";
+});
+
+</script>
+
+</body>
+</html>
